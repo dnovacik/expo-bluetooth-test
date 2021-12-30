@@ -10,6 +10,9 @@
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
+    "plugins": [
+      "@config-plugins/react-native-ble-plx"
+    ],
     "updates": {
       "fallbackToCacheTimeout": 0
     },
@@ -23,7 +26,12 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
-      }
+      },
+      "permissions": [
+        "android.permission.BLUETOOTH",
+        "android.permission.BLUETOOTH_ADMIN"
+      ],
+      "package": "bluetooth.test.com"
     },
     "web": {
       "favicon": "./assets/favicon.png"
